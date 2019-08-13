@@ -4,6 +4,7 @@ let factSelect = document.querySelector('#factSelect');
 
 let numberInput = document.querySelector('#numberInput');
 numberInput.addEventListener('input', getFactAjax);
+factSelect.addEventListener('change', getFactAjax);
 
 function getFactAjax() {
     let number = numberInput.value;
